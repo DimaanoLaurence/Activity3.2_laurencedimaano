@@ -161,3 +161,8 @@ VALUES
     UPDATE heroes
     SET state = 'inactive'
     WHERE hero_id = 1;
+
+    SELECT p.player_name, h.hero_name
+    FROM players AS p
+    JOIN heroes AS h ON p.player_id = h.player_id
+    WHERE h.state = 'active';
