@@ -166,3 +166,7 @@ VALUES
     FROM players AS p
     JOIN heroes AS h ON p.player_id = h.player_id
     WHERE h.state = 'active';
+
+    SELECT hero_name
+    FROM heroes
+    WHERE classification = 'archer';
