@@ -170,3 +170,8 @@ VALUES
     SELECT hero_name
     FROM heroes
     WHERE classification = 'archer';
+
+    SELECT class, AVG(level) AS average_level
+    FROM players
+    GROUP BY class
+    ORDER BY average_level DESC;
